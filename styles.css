@@ -1,0 +1,88 @@
+* {
+    font-family: "Times New Roman";
+    scroll-behavior: smooth;
+}
+nav {
+    position: fixed;
+    text-align: left;
+    border-right: solid 2px black; 
+    height: 100%;
+    overflow: scroll;
+    
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav ul li , .nav-header{
+    padding: 10px;
+    border-bottom: double 2px grey;
+    border-left: solid 2px black;
+    
+}
+nav ul li {
+    text-align: center;
+
+}
+section {
+    position: relative;
+    left: 280px;
+    width: 80vw;
+
+}
+
+header{
+    font-size: 32px;
+}
+
+code {
+    background: #f4f4f4;
+    border: 1px solid #ddd;
+    border-left: 3px solid #f36d33;
+    color: #666;
+    page-break-inside: avoid;
+    font-family: monospace;
+    font-size: 15px;
+    line-height: 1.6;
+    margin-bottom: 1.6em;
+    max-width: 100%;
+    overflow: auto;
+    padding: 1em 1.5em;
+    display: block;
+    word-wrap: break-word;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    cursor: pointer;
+    background-color: black;
+    color: white;
+}
+
+@media(max-width: 1000px){
+    /*
+    Code to put nav on top when screen is short
+    I rather it disappears
+    nav {
+        position: static;
+        display: flex;
+        flex-direction: column;
+    } */
+    nav {
+        display: none;
+    }
+    section {
+        position: static;
+        width: 100%;
+        text-align: center;
+    }
+}
+
+a .ref-link {
+    text-decoration: underline;
+}
